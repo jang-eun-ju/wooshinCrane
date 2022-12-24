@@ -59,10 +59,10 @@ const CardWrapper = styled.div`
     }
   }
 
-  @media all and (min-device-width : 320px) and (max-device-width : 480px) {
+  @media all and (min-width : 320px) and (max-width : 480px) {
     width: 100%;
     height: 400px;
-
+    margin-left: 1.2%;
     &:hover {
       width: 105%;
       height: 10%;
