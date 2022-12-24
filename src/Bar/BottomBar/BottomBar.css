@@ -1,0 +1,42 @@
+.BottomBar_All{
+
+    position: absolute;
+    background-color: black;
+    height: 30%;
+    width: 100%;
+    margin-top: 10%;
+    color: white;
+}
+#BottomBar_Title{
+    margin-top: 8.3%;
+    font-size: 3.4ch;
+    font-weight: bold;
+}
+#BottomBar_Body{
+    margin-top: 4.3%;
+    color: gray;
+    text-align: left;
+}
+
+@media all and (min-device-width : 320px) and (max-device-width : 480px) {
+    .BottomBar_All{
+
+        position: absolute;
+        background-color: black;
+        height: 55%;
+        width: 100%;
+        margin-top: 10%;
+        color: white;
+    }
+    #BottomBar_Title{
+        margin-top: 8.3%;
+        font-size: 3.4ch;
+        font-weight: bold;
+    }
+    #BottomBar_Body{
+        margin-top: 4.3%;
+        color: gray;
+        text-align: left;
+        margin-left: 14%;
+    }
+}

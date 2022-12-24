@@ -7,9 +7,10 @@
     height: 100%;
 }
 .MainPage_Card{
-    margin-left: 20%;
+    width: 70%;
+    margin-left: 15%;
 }
 .MainPage_GalleryPlus{
-    margin-top: 2%;
+
     margin-bottom: 2%;
 }

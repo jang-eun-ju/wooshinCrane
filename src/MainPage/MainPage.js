@@ -2,6 +2,7 @@ import './MainPage.css';
 import MainImage from './MainImage/MainImage';
 import CardList from './CardList/CardList';
 import Button from 'react-bootstrap/Button';
+import CardListThree from './CardList/CardListThree';
 function MainPage() {
     return (
       <div className="MainPage_Main">
@@ -9,7 +10,7 @@ function MainPage() {
             <MainImage ></MainImage>
         </div>
         <div className='MainPage_Card'>
-            <CardList></CardList>
+            <CardListThree></CardListThree>
         </div> 
         
         <div className='MainPage_GalleryPlus'>

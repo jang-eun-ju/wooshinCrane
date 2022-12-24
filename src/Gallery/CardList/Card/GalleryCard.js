@@ -42,19 +42,30 @@ const CardWrapper = styled.div`
     height: 500px;
 
     &:hover {
-      width: 310px;
-      height: 410px;
+      width: 31%;
+      height: 20%;
       box-shadow: rgba(0, 0, 0, 0.9) 0px 22px 70px 4px;
     }
   }
 
   @media all and (max-width: 1024px) {
-    width: 28%;
+    width: 44%;
     height: 400px;
 
     &:hover {
-      width: 280px;
-      height: 450px;
+      width: 45%;
+      height: 20%;
+      box-shadow: rgba(0, 0, 0, 0.9) 0px 22px 70px 4px;
+    }
+  }
+
+  @media all and (min-device-width : 320px) and (max-device-width : 480px) {
+    width: 100%;
+    height: 400px;
+
+    &:hover {
+      width: 105%;
+      height: 10%;
       box-shadow: rgba(0, 0, 0, 0.9) 0px 22px 70px 4px;
     }
   }
