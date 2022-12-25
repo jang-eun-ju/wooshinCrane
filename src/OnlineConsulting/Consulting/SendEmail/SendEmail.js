@@ -21,7 +21,7 @@ function SendEmail() {
             phone : document.getElementById('phone').value,
             message : document.getElementById('message').value,
         }
-        alert("견적 문의가 완료되었습니다. 빠른 시일 내에 답변드리겠습니다.");
+        alert("견적 문의가 완료되었습니다. 빠른 시일 내에 답변드리겠습니다~.");
         console.log(templateParams);
         emailjs.send(process.env.REACT_APP_SERVER_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_ID).then(function(response){
             console.log('Success!', response.status, response.text); 
