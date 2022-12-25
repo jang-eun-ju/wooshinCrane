@@ -13,13 +13,14 @@ function SendEmail() {
         }
         alert("견적 문의가 완료되었습니다. 빠른 시일 내에 답변드리겠습니다.");
         console.log(templateParams);
-        emailjs.send('service_16p03up', 'template_xmgzymy', templateParams, 'bh0JNyaqzj9G1Npku').then(function(response){
+        emailjs.send(process.env.REACT_APP_SERVER_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_ID).then(function(response){
             console.log('Success!', response.status, response.text); 
         }, function(error){
             console.log('Failed...', error);
       
         })
     }
+    
     return (
         <div>
             <form>
