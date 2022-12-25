@@ -3,16 +3,7 @@
 import emailjs from '@emailjs/browser';
 
 function SendEmail() {
-    const Dotenv = require('dotenv-webpack');
-
-        module.exports = {
-        // ...
-        plugins: [
-            new Dotenv({
-            systemvars: true // 해당 옵션을 추가 작성
-            }),
-        ],
-    };
+   
     const sendEmail = () => {
         emailjs.init('User id');
         let templateParams  = {
@@ -51,7 +42,7 @@ function SendEmail() {
                     <label for="exampleInputPassword1" class="form-label">견적 내용</label>
                     <textarea placeholder="ex. 원하시는 날짜, 업무, 장소, 가격 등에 대해 작성해주시면 성실히 답변해드리겠습니다." class="form-control" id="message"/>
                 </div>
-                <a href = "/online_consulting" type="submit" class="btn btn-primary" onClick={sendEmail}>Submit</a>
+                <a type="submit" class="btn btn-primary" onClick={sendEmail}>Submit</a>
             </form>
         </div>
       );
