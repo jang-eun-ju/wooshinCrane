@@ -1,8 +1,18 @@
 
 
 import emailjs from '@emailjs/browser';
+
 function SendEmail() {
-    
+    const Dotenv = require('dotenv-webpack');
+
+        module.exports = {
+        // ...
+        plugins: [
+            new Dotenv({
+            systemvars: true // 해당 옵션을 추가 작성
+            }),
+        ],
+    };
     const sendEmail = () => {
         emailjs.init('User id');
         let templateParams  = {
